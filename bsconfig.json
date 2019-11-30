@@ -1,0 +1,31 @@
+{
+  "name": "reason-urql-ssr",
+  "reason": {
+    "react-jsx": 3
+  },
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "pages"
+    },
+    {
+      "dir": "bindings"
+    },
+    {
+      "dir": "components"
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bs-dependencies": ["reason-urql", "wonka", "reason-react", "bs-fetch"],
+  "refmt": 3,
+  "warnings": {
+    "error": "+5"
+  },
+  "ppx-flags": ["@baransu/graphql_ppx_re/ppx6"]
+}

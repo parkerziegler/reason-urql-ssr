@@ -1,0 +1,5 @@
+node_modules
+.next
+.graphql_ppx_cache
+lib
+.merlin

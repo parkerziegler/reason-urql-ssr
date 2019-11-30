@@ -31,8 +31,6 @@ let typeToIcon =
     ("Water", "/Water@2x.png"),
   |]);
 
-external styleJsx: (~jsx: bool) => string = "";
-
 [@react.component]
 let make = (~pokemon) => {
   <div>

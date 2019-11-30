@@ -1,23 +1,5 @@
 open ReasonUrql;
 
-module GetPokemon = [%graphql
-  {|
-query pokemon($first: Int!) {
-    pokemons(first: $first) {
-      id
-      name
-      types
-      resistant
-      weaknesses
-      image
-      evolutions {
-        name
-      }
-    }
-  }
-|}
-];
-
 type state = {
   search: string,
   count: int,

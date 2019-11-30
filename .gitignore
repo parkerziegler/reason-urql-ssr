@@ -3,3 +3,4 @@ node_modules
 .graphql_ppx_cache
 lib
 .merlin
+**/*.bs.js
